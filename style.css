@@ -1,0 +1,92 @@
+/* Google Font importeren: Courier Prime (typemachine-stijl) */
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap');
+
+body {
+    font-family: 'Courier Prime', 'Courier New', Courier, monospace;
+    background-color: #fada8a; /* Warm crème/geel oud papier */
+    color: #2b2622; /* Inkt-zwart/donkerbruin */
+    margin: 0;
+    padding: 0;
+    line-height: 1.7;
+}
+
+/* Container om de inhoud gecentreerd en overzichtelijk te houden */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header & Navigatiemenu */
+header {
+    text-align: center;
+    border-bottom: 2px dashed #b5a48b; /* Subtiele stippellijn als scheiding */
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #4a3e35;
+    font-weight: bold;
+    padding: 5px 10px;
+    border: 1px solid transparent;
+}
+
+nav a:hover, nav a.active {
+    border: 1px solid #4a3e35;
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
+/* Secties & Blokken */
+.card {
+    background: rgba(255, 255, 255, 0.3); /* Licht doorschijnend op papier */
+    border: 1px solid #c8bc9d;
+    padding: 25px;
+    margin-bottom: 30px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+}
+
+/* Afbeeldingen van Voorbijganger Twee */
+.illustratie {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 15px auto;
+}
+
+/* Footer met links naar mail & insta */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #b5a48b;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #2b2622;
+}/* Styling voor de gedichten-afbeelding */
+.gedicht-afbeelding {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 6px;
+}
