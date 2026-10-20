@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voorbijganger Twee | Afrekenen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Voorbijganger Twee</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="over-mij.html">Over mij</a></li>
+                    <li><a href="gedichten.html">Gedichten</a></li>
+                    <li><a href="nieuws.html">Nieuws</a></li>
+                    <li><a href="afbeeldingen.html">Afbeeldingen</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="webshop.html">Webshop</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <article class="card">
+                <h2>Bestelling & Gegevens</h2>
+                
+                <div id="order-summary" style="background: #f9f9f9; padding: 15px; border-radius: 6px; margin-bottom: 20px;">
+                    <h3>Besteloverzicht:</h3>
+                    <div id="checkout-cart-items"></div>
+                    <p style="font-weight: bold; margin-top: 10px;">Totaalbedrag: €<span id="checkout-total">0.00</span></p>
+                </div>
+
+                <!-- Hier staat de gezochte regel met de Formspree link: -->
+                <form id="checkout-form" action="https://formspree.io/f/mvkzjzpj" method="POST" style="display: flex; flex-direction: column; gap: 12px; max-width: 500px;">
+                    <!-- Onzichtbare velden die de winkelmand-inhoud meesturen -->
+                    <input type="hidden" name="bestelling" id="form-order-details">
+                    <input type="hidden" name="totaalbedrag" id="form-order-total">
+
+                    <label for="voornaam">Voornaam *</label>
+                    <input type="text" id="voornaam" name="voornaam" required style="padding: 8px;">
+
+                    <label for="achternaam">Achternaam *</label>
+                    <input type="text" id="achternaam" name="achternaam" required style="padding: 8px;">
+
+                    <label for="straat">Straat en huisnummer *</label>
+                    <input type="text" id="straat" name="straat_huisnummer" required style="padding: 8px;">
+
+                    <label for="toevoeging">Toevoeging (optioneel)</label>
+                    <input type="text" id="toevoeging" name="toevoeging" style="padding: 8px;">
+
+                    <label for="postcode">Postcode *</label>
+                    <input type="text" id="postcode" name="postcode" required style="padding: 8px;">
+
+                    <label for="email">E-mailadres *</label>
+                    <input type="email" id="email" name="email" required style="padding: 8px;">
+
+                    <label for="telefoon">Telefoonnummer (optioneel)</label>
+                    <input type="tel" id="telefoon" name="telefoon" style="padding: 8px;">
+
+                    <button type="submit" style="padding: 12px; background-color: #333; color: white; border: none; border-radius: 4px; font-size: 16px; cursor: pointer; margin-top: 10px;">
+                        Bestelling plaatsen
+                    </button>
+                </form>
+            </article>
+        </main>
+
+        <footer>
+            <p>
+               Volg Voorbijganger Twee op <a href="https://www.instagram.com/voorbijgangertwee" target="_blank">Instagram</a>
+                | Stuur een <a href="mailto:voorbijgangertwee.beevee@hotmail.com">E-mail</a>
+            </p>
+        </footer>
+    </div>
+
+    <script src="cart.js"></script>
+</body>
+</html>

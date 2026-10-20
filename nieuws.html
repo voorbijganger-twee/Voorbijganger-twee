@@ -56,5 +56,29 @@
         </footer>
     </div>
 
+<!-- Zwevende Winkelmand Knop (Rechtsboven) -->
+<button id="floating-cart-btn" onclick="toggleCartModal()">
+    🛒 <span id="cart-count">0</span>
+</button>
+
+<!-- Uitschuifbaar Winkelmand Paneel -->
+<div id="cart-drawer" class="cart-drawer">
+    <div class="cart-drawer-header">
+        <h3>Jouw Winkelmandje</h3>
+        <button onclick="toggleCartModal()" class="close-btn">&times;</button>
+    </div>
+    
+    <div id="cart-items" class="cart-drawer-body">
+        <!-- Producten worden hier automatisch ingeladen door cart.js -->
+    </div>
+
+    <div class="cart-drawer-footer">
+        <p><strong>Totaal: €<span id="cart-total">0.00</span></strong></p>
+        <a href="checkout.html" class="checkout-btn">Bestellen en betalen</a>
+    </div>
+</div>
+
+<!-- Koppeling naar het JavaScript-bestand -->
+<script src="cart.js"></script>
 </body>
 </html>
